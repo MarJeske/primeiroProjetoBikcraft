@@ -111,6 +111,11 @@ li {
   background-color: #c20606;
 }
 
+.main-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .main-info h2 {
   font-size: 64px;
   text-transform: uppercase;
@@ -154,4 +159,87 @@ li {
   width: 100%;
   padding: 40px;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .main-advantages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-advantages h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    margin-top: 30px;
+  }
+
+  .header {
+    gap: 30px;
+  }
+
+  .bikcraft-description-wraper h1 {
+    font-size: 2rem;
+  }
+
+  .bikcraft-description-wraper p {
+    font-size: 1rem;
+  }
+
+  .btn-see-more {
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+
+  .main {
+    margin-top: 30px;
+  }
+  .main-info h2 {
+    font-size: 3rem;
+    padding: 20px;
+  }
+
+  .advantage h3,
+  .advantage p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    margin-top: 30px;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-info {
+    grid-template-columns: 1fr;
+  }
+
+  .bikcraft-description-wraper {
+    text-align: left;
+  }
+
+  .btn-see-more {
+    place-self: start;
+  }
+
+  .bikcraft-description-wraper::before {
+    display: none;
+  }
+
+  .advantages-list {
+    padding: 20px;
+  }
 }
